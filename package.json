@@ -1,6 +1,6 @@
 {
   "name": "callbag-empty",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "👜 Callbag source that emits no data and completes immediately.",
   "main": "dist/callbag-empty.js",
   "module": "dist/callbag-empty.es.js",
