@@ -38,7 +38,7 @@ test('completes immediately', done => {
   done()
 })
 
-test('does not emit completion if sink unsubscribed immediately', done => {
+test('does not emit completion if sink unsubscribes immediately', done => {
   const fail = () => {
     done.fail('This should not happen.')
   }
