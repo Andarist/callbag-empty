@@ -8,9 +8,11 @@
     "dist"
   ],
   "scripts": {
+    "test": "jest",
     "precommit": "lint-staged",
     "prebuild": "rimraf dist",
     "build": "rollup -c",
+    "preversion": "npm test",
     "prepare": "npm run build"
   },
   "repository": {
@@ -19,8 +21,7 @@
   },
   "keywords": [
     "callbag",
-    "callbags",
-    "sample"
+    "callbags"
   ],
   "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
   "license": "MIT",
@@ -29,8 +30,8 @@
   },
   "homepage": "https://github.com/Andarist/callbag-empty#readme",
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.42",
-    "@babel/preset-env": "7.0.0-beta.42",
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/preset-env": "7.0.0-beta.54",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^22.4.3",
     "husky": "^0.14.3",
@@ -38,7 +39,7 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2",
-    "rollup": "^0.57.1",
-    "rollup-plugin-babel": "^4.0.0-beta.3"
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "4.0.0-beta.7"
   }
 }
